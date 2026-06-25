@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1.0",
   "name": "logo-skills",
-  "version": "0.1.0",
-  "description": "Produce Traditional Chinese logo delivery SOPs, checklists, README templates, naming rules, and acceptance criteria for brand identity handoff packages.",
+  "version": "0.2.0",
+  "description": "Produce Traditional Chinese logo delivery SOPs, checklists, README templates, naming rules, acceptance criteria, and brand-specific handoff profiles for logo delivery packages, including HRDA Plus.",
   "entrypoint": "SKILL.md",
   "license": "MIT",
   "keywords": [
@@ -10,7 +10,9 @@
     "brand",
     "sop",
     "traditional-chinese",
-    "delivery"
+    "delivery",
+    "hrda-plus",
+    "brand-profile"
   ],
   "capabilities": {
     "filesystem": {
