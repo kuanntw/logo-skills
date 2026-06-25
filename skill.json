@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "name": "logo-skills",
+  "version": "0.1.0",
+  "description": "Produce Traditional Chinese logo delivery SOPs, checklists, README templates, naming rules, and acceptance criteria for brand identity handoff packages.",
+  "entrypoint": "SKILL.md",
+  "license": "MIT",
+  "keywords": [
+    "logo",
+    "brand",
+    "sop",
+    "traditional-chinese",
+    "delivery"
+  ],
+  "capabilities": {
+    "filesystem": {
+      "read": true,
+      "write": false
+    },
+    "network": false,
+    "commands": {
+      "execute": false,
+      "allowed": []
+    },
+    "secrets": {
+      "reads_secrets": false,
+      "writes_secrets": false
+    }
+  },
+  "update": {
+    "strategy": "semver",
+    "channel": "stable",
+    "allow_major": false,
+    "auto_update": false
+  }
+}
