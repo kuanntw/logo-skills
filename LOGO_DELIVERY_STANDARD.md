@@ -52,12 +52,16 @@
 
 ## 4. 檔案格式標準
 
+## 4.1 PDF 語言與中文字體處理原則
+
+PDF 輸出前，應確認中文字體已正確嵌入，且於 macOS、Windows、瀏覽器 PDF viewer 與常用印刷流程中不會出現亂碼、缺字、字距異常或不可搜尋文字。若交付方無法確保中文 PDF 顯示與列印結果正確，為降低交付風險，PDF 版本應改以英文內容輸出；繁體中文內容可保留於 Markdown、Figma 或其他可編輯來源文件中作為參考。
+
 | 格式 | 用途 | 驗收要求 |
 |---|---|---|
 | AI | Adobe Illustrator 原始編輯檔，用於後續修改、印刷輸出與品牌延伸設計 | 圖層命名清楚、向量路徑完整、連結素材已嵌入或一併提供、文字需標示字體或另存轉外框版本 |
 | SVG | 網頁、App、介面系統與可縮放數位應用 | 可於主流瀏覽器正常開啟，無不必要點陣圖，viewBox 設定正確，顏色與核准版本一致 |
 | EPS | 印刷、招牌、刺繡、燙金、特殊材質輸出 | 向量可編輯，色彩模式正確，無遺失字體或連結，供應商可正常開啟 |
-| PDF | 印刷交付、品牌規範文件、供應商確認使用 | 向量保留，必要時包含出血與裁切標記，色彩模式符合印刷或數位目的 |
+| PDF | 印刷交付、品牌規範文件、供應商確認使用 | 向量保留，必要時包含出血與裁切標記，色彩模式符合印刷或數位目的；若無法確認中文字體嵌入、中文可搜尋性與跨平台顯示正確，應改以英文內容輸出 PDF |
 | PNG | 透明背景數位圖檔，用於簡報、網站、社群與文件 | 背景透明，解析度符合需求，邊緣無白邊、鋸齒或殘影 |
 | JPG | 白底或指定背景之預覽圖、文件圖、簡報圖 | 背景正確，壓縮品質足夠，無明顯失真或色偏 |
 | WebP | 網站效能優化、網頁圖片載入 | 檔案大小合理，透明度需求正確，於目標瀏覽器環境可正常顯示 |
@@ -352,6 +356,94 @@ Logo 交付版本應採用清楚且可追蹤的版本編號，以利內部管理
 - 若 Logo 本體設計有變更，應同步更新品牌規範、README 與所有常用輸出格式。
 - 若僅修正輸出尺寸、格式或檔案命名，應仍記錄於 changelog，以利追蹤。
 
-## 15. 附則
+## 15. Logo 設計 Prompt 建議
+
+若需使用 AI 工具、設計自動化工具或生成式設計流程協助產出 Logo 概念，應使用結構化 prompt，以確保設計方向、品牌定位、輸出限制與驗收條件清楚可追蹤。Prompt 應作為概念發想與溝通輔助，不應取代品牌策略、商標檢索、著作權檢查、人工修稿與最終設計驗收。
+
+### 15.1 Prompt 應包含的資訊
+
+| Prompt 欄位 | 說明 | 範例 |
+|---|---|---|
+| 品牌名稱 | Logo 需呈現或服務的品牌名稱 | BrandName |
+| 品牌定位 | 品牌所屬產業、服務內容與市場定位 | B2B SaaS、永續生活品牌、金融科技平台 |
+| 目標受眾 | 主要溝通對象與使用者特徵 | 新創團隊、企業採購、年輕消費者 |
+| 品牌個性 | 希望傳達的感受與語氣 | 專業、可信任、極簡、友善、創新 |
+| 視覺方向 | 偏好的設計風格或關鍵元素 | 幾何、單線條、現代無襯線、抽象符號 |
+| 避免事項 | 不希望出現的元素或風格 | 避免過度複雜、避免卡通感、避免立體陰影 |
+| 色彩方向 | 建議品牌色或色彩限制 | 深藍與亮綠；需可轉為單色版本 |
+| 字體方向 | 字標或品牌字體傾向 | 現代 sans-serif、清楚可讀、不可過度裝飾 |
+| 使用情境 | Logo 將被使用的媒介 | 網站、App icon、簡報、印刷、社群頭像 |
+| 輸出限制 | 尺寸、比例、背景、格式或可延伸性要求 | 需適合 16x16 favicon 與 1024x1024 App icon |
+| 驗收條件 | 判斷輸出是否合格的標準 | 縮小後可辨識、可單色化、不可侵權或近似既有商標 |
+
+### 15.2 建議 Prompt 範本
+
+```text
+請為「{品牌名稱}」設計 Logo 概念。
+
+品牌背景：
+- 產業 / 服務：{品牌產業與服務內容}
+- 品牌定位：{市場定位與差異化}
+- 目標受眾：{主要受眾}
+- 品牌個性：{例如專業、可信任、創新、友善、極簡}
+
+視覺方向：
+- Logo 類型：{圖像標誌 / 文字標誌 / 組合標誌 / Icon / Symbol}
+- 風格關鍵字：{例如現代、幾何、極簡、科技感、溫暖}
+- 色彩方向：{品牌色或色彩限制}
+- 字體方向：{中文字體 / 英文字體 / 字重 / 字感}
+- 需避免：{不希望出現的元素、風格或顏色}
+
+使用情境：
+- 需適用於網站、App、印刷、簡報、社群頭像與品牌文件。
+- 需可延伸為 favicon、App icon、黑白單色版與反白版。
+
+輸出要求：
+- 請提供 3 個不同設計方向，並說明每個方向的設計理念。
+- 每個方向需說明適合的 Logo 版本、色彩建議、字體建議與可能限制。
+- 設計需保持簡潔、可辨識、可縮放，避免過度複雜或依賴細節。
+- 不得模仿既有品牌或商標，並需提醒後續進行商標檢索與人工審查。
+```
+
+### 15.3 英文 Prompt 範本
+
+若輸出工具對中文支援不穩定，或需產出英文 PDF / 英文交付說明，可使用下列英文 prompt：
+
+```text
+Create logo design concepts for "{Brand Name}".
+
+Brand context:
+- Industry / service: {industry and service description}
+- Positioning: {market positioning and differentiation}
+- Target audience: {primary audience}
+- Brand personality: {professional, trustworthy, innovative, friendly, minimal, etc.}
+
+Visual direction:
+- Logo type: {symbol / wordmark / combination mark / icon}
+- Style keywords: {modern, geometric, minimal, tech, warm, premium, etc.}
+- Color direction: {brand colors or color restrictions}
+- Typography direction: {font style, weight, tone}
+- Avoid: {elements, styles, colors, or associations to avoid}
+
+Usage context:
+- The logo must work for websites, apps, print, presentations, social media avatars, and brand documentation.
+- The design must be adaptable to favicon, app icon, monochrome, and reversed versions.
+
+Output requirements:
+- Provide 3 distinct design directions and explain the rationale behind each direction.
+- For each direction, describe suitable logo versions, color recommendations, typography recommendations, and possible limitations.
+- Keep the design simple, recognizable, scalable, and not dependent on excessive detail.
+- Do not imitate existing brands or trademarks; include a reminder that trademark search and human review are required before final approval.
+```
+
+### 15.4 Prompt 使用注意事項
+
+- Prompt 產出僅可作為概念發想與方向討論，不得直接視為最終商標或品牌識別。
+- 任何 AI 生成結果皆需經設計師整理、重繪、向量化、比例修正與品牌一致性檢查。
+- 最終 Logo 應進行相似商標檢索、著作權風險檢查與內部品牌審核。
+- 若 prompt 或生成工具無法穩定處理中文，應優先使用英文 prompt，並於後續交付文件中補回繁體中文說明。
+- Prompt 中不得要求模仿特定既有品牌、設計師、商標、平台圖示或受保護的識別元素。
+
+## 16. 附則
 
 本標準為 Logo 設計交付之最低要求。若專案、品牌、平台或印刷供應商有更嚴格規範，應以較嚴格者為準。所有交付檔案應以最終核准版本為依據，並由品牌負責人或專案管理人員完成驗收後，方可視為正式結案。
