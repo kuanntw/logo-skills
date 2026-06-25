@@ -1,0 +1,449 @@
+# Logo 設計交付標準文件
+
+## 1. 文件目的
+
+本標準用於規範 Logo 設計完成後之交付內容、檔案格式、命名規則、使用規範、資料夾結構與驗收標準，確保 Logo 資產可穩定應用於網站、App、印刷品、簡報、社群媒體、品牌文件及其他企業識別相關場景。
+
+本文件旨在協助設計師、品牌顧問、外包廠商與內部專案管理人員建立一致的交付標準，降低後續溝通成本、避免檔案缺漏或格式不符，並確保品牌識別於不同媒介中維持一致性、可辨識性與專業性。
+
+## 2. 適用範圍
+
+本標準適用於下列 Logo 或品牌識別相關設計交付：
+
+- 品牌 Logo 設計
+- 品牌 Logo 改版或優化
+- 子品牌 Logo
+- 產品 Logo
+- 活動 Logo
+- App Icon
+- 網站 favicon
+- 社群媒體頭像 Logo
+- 品牌識別延伸圖形或符號
+- 需納入品牌系統管理之文字標誌、圖像標誌或組合標誌
+
+## 3. Logo 交付清單
+
+| 交付項目 | 必要性 | 建議格式 | 用途說明 | 驗收重點 |
+|---|---|---|---|---|
+| 原始可編輯檔 | 必交 | AI、Figma file、Figma link | 後續修改、延伸設計、版本維護 | 圖層可編輯、文字已標示字體或已轉外框、連結素材完整 |
+| 向量檔 | 必交 | AI、EPS、SVG、PDF | 印刷、放大輸出、跨媒介應用 | 放大不失真、路徑完整、無缺圖或破圖 |
+| PNG 透明背景 | 必交 | PNG | 網站、簡報、App、一般數位使用 | 背景透明、邊緣清晰、尺寸正確 |
+| JPG 白底圖 | 必交 | JPG | 文件預覽、簡報、一般辦公使用 | 白底乾淨、無壓縮破圖、色彩正確 |
+| SVG 網頁版 | 必交 | SVG | 網站、網頁元件、RWD 介面 | 可於瀏覽器正常開啟、檔案乾淨、無不必要內嵌點陣圖 |
+| PDF 印刷版 | 必交 | PDF | 印刷、供應商輸出、合約或品牌文件 | 色彩模式符合需求、向量保留、尺寸與出血設定正確 |
+| 主 Logo | 必交 | AI、SVG、PNG、PDF | 品牌主要識別使用 | 與核准設計一致，為預設使用版本 |
+| 橫式 Logo | 必交 | AI、SVG、PNG、PDF | 網站頁首、簡報頁尾、橫幅版面 | 橫向比例清楚，文字與圖形間距正確 |
+| 直式 Logo | 選交 | AI、SVG、PNG、PDF | 垂直版面、海報、封面、品牌文件 | 直式比例合理，圖文排列符合規範 |
+| Icon / Symbol 單獨版 | 必交 | AI、SVG、PNG | App、社群頭像、favicon、品牌符號 | 單獨使用仍具辨識度，安全空間足夠 |
+| Wordmark 文字版 | 選交 | AI、SVG、PNG、PDF | 僅需品牌文字呈現之場景 | 字距、字重、比例與品牌規範一致 |
+| 深色背景版 | 必交 | AI、SVG、PNG、PDF | 深色底、圖片暗部、深色介面 | 對比足夠，邊界清楚可辨識 |
+| 淺色背景版 | 必交 | AI、SVG、PNG、PDF | 白底、淺色底、文件與印刷 | 色彩準確，於淺色背景可清楚辨識 |
+| 黑色單色版 | 必交 | AI、SVG、PNG、PDF | 單色印刷、傳真、特殊材質輸出 | 僅使用黑色，輪廓與細節完整 |
+| 白色單色版 | 必交 | AI、SVG、PNG、PDF | 深色背景、反白印刷、特殊材質 | 僅使用白色，背景搭配可清楚辨識 |
+| 灰階版 | 選交 | AI、SVG、PNG、PDF | 黑白文件、低彩度印刷 | 灰階層次清楚，不影響辨識 |
+| favicon | 必交 | ICO、PNG、SVG | 瀏覽器頁籤、書籤、網站捷徑 | 16x16、32x32 可辨識，檔案可正常載入 |
+| App icon | 選交 | PNG、SVG、AI | iOS、Android、PWA 應用 | 尺寸完整，符合平台安全範圍與圓角需求 |
+| 社群頭像版 | 必交 | PNG、JPG | Facebook、Instagram、LinkedIn、YouTube 等 | 方形構圖，縮小後可辨識，留有安全邊距 |
+| 品牌色彩規範 | 必交 | PDF、Markdown、Figma | 品牌色彩一致性管理 | HEX、RGB、CMYK 完整，Pantone 視需求提供 |
+| 字體規範 | 必交 | PDF、Markdown、Figma | 品牌字體、Logo 字體、替代字體管理 | 字體名稱、字重、授權與替代方案完整 |
+| Logo 使用規範 | 必交 | PDF、Markdown、Figma | 規範內外部使用方式 | 包含安全空間、最小尺寸、背景與禁用規則 |
+| 禁止使用範例 | 必交 | PDF、PNG、Markdown | 避免錯誤套用 Logo | 錯誤案例明確，包含變形、改色、陰影等 |
+| README 說明文件 | 必交 | README.md | 說明交付包內容與聯絡方式 | 專案資訊、版本紀錄、檔案說明完整 |
+
+## 4. 檔案格式標準
+
+## 4.1 PDF 語言與中文字體處理原則
+
+PDF 輸出前，應確認中文字體已正確嵌入，且於 macOS、Windows、瀏覽器 PDF viewer 與常用印刷流程中不會出現亂碼、缺字、字距異常或不可搜尋文字。若交付方無法確保中文 PDF 顯示與列印結果正確，為降低交付風險，PDF 版本應改以英文內容輸出；繁體中文內容可保留於 Markdown、Figma 或其他可編輯來源文件中作為參考。
+
+| 格式 | 用途 | 驗收要求 |
+|---|---|---|
+| AI | Adobe Illustrator 原始編輯檔，用於後續修改、印刷輸出與品牌延伸設計 | 圖層命名清楚、向量路徑完整、連結素材已嵌入或一併提供、文字需標示字體或另存轉外框版本 |
+| SVG | 網頁、App、介面系統與可縮放數位應用 | 可於主流瀏覽器正常開啟，無不必要點陣圖，viewBox 設定正確，顏色與核准版本一致 |
+| EPS | 印刷、招牌、刺繡、燙金、特殊材質輸出 | 向量可編輯，色彩模式正確，無遺失字體或連結，供應商可正常開啟 |
+| PDF | 印刷交付、品牌規範文件、供應商確認使用 | 向量保留，必要時包含出血與裁切標記，色彩模式符合印刷或數位目的；若無法確認中文字體嵌入、中文可搜尋性與跨平台顯示正確，應改以英文內容輸出 PDF |
+| PNG | 透明背景數位圖檔，用於簡報、網站、社群與文件 | 背景透明，解析度符合需求，邊緣無白邊、鋸齒或殘影 |
+| JPG | 白底或指定背景之預覽圖、文件圖、簡報圖 | 背景正確，壓縮品質足夠，無明顯失真或色偏 |
+| WebP | 網站效能優化、網頁圖片載入 | 檔案大小合理，透明度需求正確，於目標瀏覽器環境可正常顯示 |
+| ICO | favicon 與 Windows 捷徑圖示 | 應包含 16x16、32x32、48x48 等常用尺寸，於瀏覽器頁籤可正常顯示 |
+| Figma link 或 Figma file | 線上協作、設計系統維護、設計審核 | 權限可存取，頁面與元件命名清楚，包含最終核准版本與必要說明 |
+
+## 5. Logo 版本標準
+
+| Logo 版本 | 定義 | 使用情境 |
+|---|---|---|
+| Primary Logo | 品牌主要 Logo，通常為最完整且最具代表性的版本 | 官方網站、品牌文件、新聞稿、企業簡報、主要視覺露出 |
+| Secondary Logo | 輔助 Logo，於主 Logo 不適用時使用 | 空間受限、特殊版面、合作露出、活動延伸應用 |
+| Horizontal Logo | 橫式排列版本，通常適合寬版空間 | 網站頁首、Email 簽名、橫幅、簡報頁尾、合作夥伴 Logo 牆 |
+| Vertical Logo | 直式排列版本，通常適合垂直或置中構圖 | 海報、封面、展場背板、品牌手冊封面 |
+| Icon / Symbol | 僅包含圖像符號，不含完整文字 | App icon、favicon、社群頭像、產品介面、小尺寸標示 |
+| Wordmark | 僅包含品牌文字或字標 | 文字識別明確之場合、品牌聯名、低圖像干擾版面 |
+| Monochrome Logo | 單色版本，通常為純黑或純白 | 單色印刷、壓印、雷雕、刺繡、特殊製程 |
+| Reversed Logo | 反白版本，用於深色背景 | 深色介面、深色照片、深色印刷材質 |
+| Grayscale Logo | 灰階版本，移除彩色資訊但保留層次 | 黑白文件、低彩度印刷、內部文件預覽 |
+
+## 6. 尺寸與解析度標準
+
+| 尺寸 / 規格 | 建議用途 | 輸出要求 |
+|---|---|---|
+| 16x16 px | favicon 最小尺寸 | 圖形需高度簡化，仍可辨識 |
+| 32x32 px | favicon、瀏覽器頁籤 | 邊緣清楚，不可過度複雜 |
+| 48x48 px | 桌面捷徑、系統圖示 | 應保留足夠安全邊距 |
+| 180x180 px | Apple Touch Icon | PNG，方形構圖，背景依平台需求設定 |
+| 192x192 px | Android / PWA icon | PNG，符合 Web App Manifest 常用尺寸 |
+| 512x512 px | App、PWA、商店圖示基礎尺寸 | 高解析、置中、符合安全範圍 |
+| 1024x1024 px | App Store / 高解析主圖示 | 高品質 PNG，無模糊、無壓縮瑕疵 |
+| 1920 px 寬版本 | 網站大型橫幅、簡報封面、大尺寸數位輸出 | 建議 PNG 或 JPG，視背景需求提供透明或白底版本 |
+| 社群媒體頭像尺寸 | Facebook、Instagram、LinkedIn、YouTube 等 | 建議至少 1080x1080 px，方形構圖，中心視覺清楚 |
+| 簡報使用尺寸 | PowerPoint、Keynote、Google Slides | 建議提供 1024 px、1920 px 寬 PNG，透明背景優先 |
+| 印刷使用建議 | 名片、型錄、海報、包裝、招牌 | 優先使用 AI、EPS、PDF 向量檔；點陣圖需至少 300 dpi |
+
+## 7. 色彩規範
+
+品牌色彩交付應至少包含下列內容：
+
+- **HEX**：用於網站、App、簡報與一般數位介面，例如 `#000000`。
+- **RGB**：用於螢幕顯示、數位素材與簡報，例如 `R 0 / G 0 / B 0`。
+- **CMYK**：用於印刷輸出，例如 `C 0 / M 0 / Y 0 / K 100`。
+- **Pantone（若適用）**：用於品牌色精準控管、特殊印刷、包裝或大量印製。
+- **深色背景使用色**：定義 Logo 於深色背景上應使用之反白、亮色或專用色版本。
+- **淺色背景使用色**：定義 Logo 於白色或淺色背景上應使用之標準色版本。
+- **輔助色**：定義品牌延伸使用之次要色、提示色或背景色，並說明可用比例。
+- **禁止任意改色規則**：不得依個人偏好任意更改 Logo 顏色、漸層、透明度或色彩比例；如需新增色彩版本，須經品牌負責人或專案核准。
+
+## 8. 字體規範
+
+Logo 或品牌字體交付應至少包含下列資訊：
+
+- **字體名稱**：標示 Logo 使用字體與品牌延伸字體之正式名稱。
+- **字重**：標示使用字重，例如 Regular、Medium、SemiBold、Bold。
+- **授權狀態**：說明字體是否已購買商用授權、是否為開源字體、是否可嵌入網站或 App。
+- **替代字體**：提供無法使用原字體時之替代方案，並區分系統字體與網頁字體。
+- **中文字體建議**：提供品牌中文應用字體，例如思源黑體、Noto Sans TC、蘋方、微軟正黑體等，並說明適用情境。
+- **英文字體建議**：提供品牌英文應用字體，例如 Inter、Helvetica、Arial、Noto Sans、Roboto 等，並說明適用情境。
+- **網頁字體使用建議**：說明是否可使用 Google Fonts、自行託管字體、系統字體堆疊，以及載入效能注意事項。
+
+## 9. Logo 使用規範
+
+### 9.1 安全空間 Clear Space
+
+Logo 四周應保留足夠安全空間，不得放置文字、圖形、邊框或其他干擾元素。安全空間建議以 Logo 中固定元素作為基準，例如圖像符號高度的 1/2、字標高度或品牌規範中指定的 `X` 值。
+
+### 9.2 最小尺寸
+
+- 數位使用：主 Logo 寬度建議不得小於 120 px。
+- 印刷使用：主 Logo 寬度建議不得小於 25 mm。
+- Icon / Symbol：數位使用不得小於 16x16 px；若於 16x16 px 無法辨識，應提供簡化版 favicon。
+
+### 9.3 背景使用規則
+
+- 淺色背景應優先使用標準全彩版本或黑色單色版本。
+- 深色背景應使用反白版本或深色背景專用版本。
+- 複雜圖片背景應加上足夠留白、遮罩、色塊或選用對比足夠之版本。
+- 不得將 Logo 放置於對比不足、紋理過度複雜或干擾辨識的背景上。
+
+### 9.4 深淺背景搭配
+
+| 背景類型 | 建議 Logo 版本 | 注意事項 |
+|---|---|---|
+| 白色或淺色背景 | Primary Logo、Full Color、Black | 確保品牌色不偏移，避免使用白色反白版 |
+| 黑色或深色背景 | Reversed Logo、White、DarkBG 專用版 | 確保對比足夠，避免低彩度灰色造成辨識不足 |
+| 品牌色背景 | White、Black 或指定專用色 | 須依品牌規範選用，避免撞色 |
+| 圖片背景 | Reversed、Monochrome 或加底色版 | 必須檢查每張圖片之對比與可讀性 |
+
+### 9.5 正確使用範例
+
+- 使用官方核准之 Logo 檔案。
+- 依背景深淺選擇正確版本。
+- 保持 Logo 原始比例與安全空間。
+- 使用指定品牌色、單色或反白版本。
+- 於小尺寸場景使用 Icon / Symbol 或簡化版本。
+
+### 9.6 錯誤使用範例
+
+禁止下列 Logo 使用方式：
+
+- 不可拉伸變形。
+- 不可旋轉。
+- 不可任意改色。
+- 不可加陰影。
+- 不可加外框。
+- 不可改變圖形、文字或組合比例。
+- 不可改變字距、字重或字型。
+- 不可任意裁切 Logo。
+- 不可將 Logo 放置於對比不足的背景上。
+- 不可與其他圖形、文字或邊框過度接近。
+- 不可加入未核准的漸層、材質、透明度或特效。
+
+## 10. 檔案命名規則
+
+Logo 檔案命名應採用一致格式，避免空白、特殊符號與不明縮寫。建議使用英文、數字、底線 `_` 與連字號 `-`。
+
+### 10.1 命名格式
+
+```text
+品牌名稱_Logo版本_顏色模式_背景類型_尺寸_檔案格式
+```
+
+### 10.2 欄位說明
+
+| 欄位 | 說明 | 範例 |
+|---|---|---|
+| 品牌名稱 | 品牌或專案英文名稱 | BrandName |
+| Logo版本 | Primary、Horizontal、Vertical、Icon、Wordmark | Primary |
+| 顏色模式 | FullColor、Black、White、Gray、CMYK、RGB | FullColor |
+| 背景類型 | Transparent、WhiteBG、DarkBG、Print | Transparent |
+| 尺寸 | 像素或印刷尺寸；向量檔可省略或標示 Print | 1024x1024 |
+| 檔案格式 | 副檔名 | png、svg、pdf |
+
+### 10.3 命名範例
+
+```text
+BrandName_Primary_FullColor_Transparent_1024x1024.png
+BrandName_Icon_White_DarkBG.svg
+BrandName_Horizontal_Black_Print.pdf
+BrandName_Favicon_FullColor_Transparent_32x32.ico
+BrandName_AppIcon_FullColor_WhiteBG_1024x1024.png
+BrandName_Wordmark_Black_Transparent.svg
+```
+
+## 11. 資料夾結構
+
+建議交付資料夾結構如下：
+
+```text
+Logo_Delivery/
+├── 01_Source/
+├── 02_Vector/
+├── 03_PNG/
+├── 04_JPG/
+├── 05_SVG/
+├── 06_Favicon/
+├── 07_AppIcon/
+├── 08_Social/
+├── 09_Guideline/
+└── README.md
+```
+
+| 資料夾 / 檔案 | 應放置內容 |
+|---|---|
+| `01_Source/` | AI、Figma file、Figma link 說明、原始可編輯檔、必要連結素材 |
+| `02_Vector/` | EPS、PDF、AI 輸出版等向量檔，供印刷與特殊製程使用 |
+| `03_PNG/` | 各版本透明背景 PNG，依尺寸或 Logo 版本分類 |
+| `04_JPG/` | 白底或指定背景 JPG，供預覽、文件與簡報使用 |
+| `05_SVG/` | 網頁與介面使用之 SVG 檔案 |
+| `06_Favicon/` | ICO、16x16、32x32、48x48 PNG 或 SVG favicon |
+| `07_AppIcon/` | iOS、Android、PWA 所需 App icon 尺寸 |
+| `08_Social/` | 社群頭像、社群封面或平台專用 Logo 圖檔 |
+| `09_Guideline/` | Logo 使用規範、品牌色彩規範、字體規範、禁止使用範例 |
+| `README.md` | 交付包總說明、版本紀錄、聯絡窗口與使用注意事項 |
+
+## 12. 驗收標準
+
+Logo 交付驗收時，專案管理人員或品牌負責人應依下列清單逐項確認：
+
+- [ ] 是否提供原始可編輯檔。
+- [ ] 是否提供向量檔。
+- [ ] PNG 是否為透明背景。
+- [ ] SVG 是否可正常開啟。
+- [ ] 色碼是否與規範一致。
+- [ ] 深色與淺色背景是否可正常辨識。
+- [ ] 是否提供 favicon。
+- [ ] 是否提供社群頭像版本。
+- [ ] 是否提供品牌色彩規範。
+- [ ] 是否提供字體與授權說明。
+- [ ] 是否提供 Logo 使用規範。
+- [ ] 是否符合檔案命名規則。
+- [ ] 是否符合資料夾結構。
+- [ ] 是否無缺檔、破圖或錯誤格式。
+- [ ] 是否提供主 Logo、橫式 Logo、Icon / Symbol 等必要版本。
+- [ ] 是否提供黑色單色版、白色單色版與深淺背景版本。
+- [ ] 是否確認所有檔案可開啟且內容為最終核准版本。
+- [ ] 是否確認 README.md 已包含專案名稱、版本、聯絡窗口與注意事項。
+
+## 13. README 範本
+
+以下為 Logo 交付包 `README.md` 範本，可依專案需求調整：
+
+```markdown
+# 專案名稱 Logo 交付包
+
+## 1. 專案名稱
+
+- 專案名稱：請填寫專案或品牌名稱
+- 交付日期：YYYY-MM-DD
+- 交付版本：v1.0
+- 設計單位：請填寫設計師、品牌顧問或外包廠商名稱
+- 專案負責人：請填寫內部負責人姓名
+
+## 2. Logo 版本說明
+
+本交付包包含以下 Logo 版本：
+
+- Primary Logo：主要品牌識別版本
+- Horizontal Logo：橫式版本，適用於網站頁首與橫向版面
+- Vertical Logo：直式版本，適用於垂直版面或封面
+- Icon / Symbol：圖像符號版本，適用於 favicon、App icon、社群頭像
+- Wordmark：文字標誌版本
+- Monochrome Logo：單色版本
+- Reversed Logo：深色背景反白版本
+- Grayscale Logo：灰階版本
+
+## 3. 檔案格式說明
+
+- `01_Source/`：原始可編輯檔，例如 AI、Figma file 或 Figma link
+- `02_Vector/`：向量檔，例如 EPS、PDF、AI
+- `03_PNG/`：透明背景 PNG
+- `04_JPG/`：白底或指定背景 JPG
+- `05_SVG/`：網頁與介面使用 SVG
+- `06_Favicon/`：網站 favicon 檔案
+- `07_AppIcon/`：App 與 PWA icon 檔案
+- `08_Social/`：社群平台頭像與延伸素材
+- `09_Guideline/`：品牌色彩、字體與 Logo 使用規範
+
+## 4. 使用注意事項
+
+- 請優先使用本交付包內之最終核准版本。
+- 不得任意拉伸、旋轉、改色、加陰影、加外框或改變 Logo 比例。
+- 請依背景深淺選用正確 Logo 版本。
+- 印刷或特殊製程請優先使用向量檔。
+- 若需新增 Logo 版本或特殊色彩版本，請先取得品牌負責人核准。
+
+## 5. 聯絡窗口
+
+- 品牌負責人：姓名 / 部門
+- Email：name@example.com
+- 電話或通訊工具：請填寫聯絡方式
+
+## 6. 版本紀錄
+
+| 版本 | 日期 | 修改內容 | 修改者 | 備註 |
+|---|---|---|---|---|
+| v1.0 | YYYY-MM-DD | 初版交付 | 姓名 | 最終核准版本 |
+```
+
+## 14. 版本管理
+
+Logo 交付版本應採用清楚且可追蹤的版本編號，以利內部管理、外部協作與後續更新。
+
+### 14.1 版本編號原則
+
+| 版本 | 定義 | 範例情境 |
+|---|---|---|
+| v1.0 | 初版正式交付 | Logo 初次核准並交付完整檔案包 |
+| v1.1 | 小幅修正 | 修正檔名、補齊尺寸、微調輸出格式、不影響 Logo 設計本體 |
+| v1.2 | 小幅增補 | 新增社群尺寸、補 favicon、補充 README 或規範說明 |
+| v2.0 | 重大改版 | Logo 圖形、字標、比例、品牌色或整體識別方向明顯變更 |
+
+### 14.2 Changelog 應記錄內容
+
+每次交付或更新時，應於 README 或獨立 `CHANGELOG.md` 中記錄：
+
+- 版本編號。
+- 更新日期。
+- 修改者或交付單位。
+- 修改原因。
+- 新增、修改或刪除之檔案。
+- Logo 視覺是否有變更。
+- 色彩、字體、尺寸或命名規則是否有變更。
+- 是否需通知既有使用單位更新素材。
+- 審核人與核准日期。
+
+### 14.3 版本管理注意事項
+
+- 舊版檔案不得直接刪除，應歸檔至 `Archive/` 或依公司版本管理規範保存。
+- 對外發布或交付供應商時，應明確標示目前有效版本。
+- 若 Logo 本體設計有變更，應同步更新品牌規範、README 與所有常用輸出格式。
+- 若僅修正輸出尺寸、格式或檔案命名，應仍記錄於 changelog，以利追蹤。
+
+## 15. Logo 設計 Prompt 建議
+
+若需使用 AI 工具、設計自動化工具或生成式設計流程協助產出 Logo 概念，應使用結構化 prompt，以確保設計方向、品牌定位、輸出限制與驗收條件清楚可追蹤。Prompt 應作為概念發想與溝通輔助，不應取代品牌策略、商標檢索、著作權檢查、人工修稿與最終設計驗收。
+
+### 15.1 Prompt 應包含的資訊
+
+| Prompt 欄位 | 說明 | 範例 |
+|---|---|---|
+| 品牌名稱 | Logo 需呈現或服務的品牌名稱 | BrandName |
+| 品牌定位 | 品牌所屬產業、服務內容與市場定位 | B2B SaaS、永續生活品牌、金融科技平台 |
+| 目標受眾 | 主要溝通對象與使用者特徵 | 新創團隊、企業採購、年輕消費者 |
+| 品牌個性 | 希望傳達的感受與語氣 | 專業、可信任、極簡、友善、創新 |
+| 視覺方向 | 偏好的設計風格或關鍵元素 | 幾何、單線條、現代無襯線、抽象符號 |
+| 避免事項 | 不希望出現的元素或風格 | 避免過度複雜、避免卡通感、避免立體陰影 |
+| 色彩方向 | 建議品牌色或色彩限制 | 深藍與亮綠；需可轉為單色版本 |
+| 字體方向 | 字標或品牌字體傾向 | 現代 sans-serif、清楚可讀、不可過度裝飾 |
+| 使用情境 | Logo 將被使用的媒介 | 網站、App icon、簡報、印刷、社群頭像 |
+| 輸出限制 | 尺寸、比例、背景、格式或可延伸性要求 | 需適合 16x16 favicon 與 1024x1024 App icon |
+| 驗收條件 | 判斷輸出是否合格的標準 | 縮小後可辨識、可單色化、不可侵權或近似既有商標 |
+
+### 15.2 建議 Prompt 範本
+
+```text
+請為「{品牌名稱}」設計 Logo 概念。
+
+品牌背景：
+- 產業 / 服務：{品牌產業與服務內容}
+- 品牌定位：{市場定位與差異化}
+- 目標受眾：{主要受眾}
+- 品牌個性：{例如專業、可信任、創新、友善、極簡}
+
+視覺方向：
+- Logo 類型：{圖像標誌 / 文字標誌 / 組合標誌 / Icon / Symbol}
+- 風格關鍵字：{例如現代、幾何、極簡、科技感、溫暖}
+- 色彩方向：{品牌色或色彩限制}
+- 字體方向：{中文字體 / 英文字體 / 字重 / 字感}
+- 需避免：{不希望出現的元素、風格或顏色}
+
+使用情境：
+- 需適用於網站、App、印刷、簡報、社群頭像與品牌文件。
+- 需可延伸為 favicon、App icon、黑白單色版與反白版。
+
+輸出要求：
+- 請提供 3 個不同設計方向，並說明每個方向的設計理念。
+- 每個方向需說明適合的 Logo 版本、色彩建議、字體建議與可能限制。
+- 設計需保持簡潔、可辨識、可縮放，避免過度複雜或依賴細節。
+- 不得模仿既有品牌或商標，並需提醒後續進行商標檢索與人工審查。
+```
+
+### 15.3 英文 Prompt 範本
+
+若輸出工具對中文支援不穩定，或需產出英文 PDF / 英文交付說明，可使用下列英文 prompt：
+
+```text
+Create logo design concepts for "{Brand Name}".
+
+Brand context:
+- Industry / service: {industry and service description}
+- Positioning: {market positioning and differentiation}
+- Target audience: {primary audience}
+- Brand personality: {professional, trustworthy, innovative, friendly, minimal, etc.}
+
+Visual direction:
+- Logo type: {symbol / wordmark / combination mark / icon}
+- Style keywords: {modern, geometric, minimal, tech, warm, premium, etc.}
+- Color direction: {brand colors or color restrictions}
+- Typography direction: {font style, weight, tone}
+- Avoid: {elements, styles, colors, or associations to avoid}
+
+Usage context:
+- The logo must work for websites, apps, print, presentations, social media avatars, and brand documentation.
+- The design must be adaptable to favicon, app icon, monochrome, and reversed versions.
+
+Output requirements:
+- Provide 3 distinct design directions and explain the rationale behind each direction.
+- For each direction, describe suitable logo versions, color recommendations, typography recommendations, and possible limitations.
+- Keep the design simple, recognizable, scalable, and not dependent on excessive detail.
+- Do not imitate existing brands or trademarks; include a reminder that trademark search and human review are required before final approval.
+```
+
+### 15.4 Prompt 使用注意事項
+
+- Prompt 產出僅可作為概念發想與方向討論，不得直接視為最終商標或品牌識別。
+- 任何 AI 生成結果皆需經設計師整理、重繪、向量化、比例修正與品牌一致性檢查。
+- 最終 Logo 應進行相似商標檢索、著作權風險檢查與內部品牌審核。
+- 若 prompt 或生成工具無法穩定處理中文，應優先使用英文 prompt，並於後續交付文件中補回繁體中文說明。
+- Prompt 中不得要求模仿特定既有品牌、設計師、商標、平台圖示或受保護的識別元素。
+
+## 16. 附則
+
+本標準為 Logo 設計交付之最低要求。若專案、品牌、平台或印刷供應商有更嚴格規範，應以較嚴格者為準。所有交付檔案應以最終核准版本為依據，並由品牌負責人或專案管理人員完成驗收後，方可視為正式結案。
