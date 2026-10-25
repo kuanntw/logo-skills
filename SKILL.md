@@ -14,7 +14,9 @@ Use this skill when the user asks to create, review, or standardize Logo design 
 2. Write in formal, clear, executable Traditional Chinese suitable for internal SOP usage unless the user requests another language.
 3. Cover practical handoff requirements for websites, apps, print, presentations, social media, and brand documentation.
 4. Include concrete file format, version, naming, folder, usage, and validation guidance.
-5. When the user needs a full Logo delivery standard, use `references/logo-delivery-standard.md` as the primary reference and adapt it to the user’s organization or project context.
+5. When the user needs a full Logo delivery standard, use [references/logo-delivery-standard.md](references/logo-delivery-standard.md) as the primary reference and adapt it to the user’s organization or project context.
+6. Use section 12 of that reference to produce a declarative delivery manifest, repeatable acceptance cases, and evidence/status records. Do not confuse the asset delivery manifest with this package's `skill.json`.
+7. Separate confirmed file properties from visual/manual checks. Mark unavailable files, unrendered previews, font/license uncertainty, and untested platforms explicitly; never infer a pass from a filename alone.
 
 
 ## Output requirements
@@ -26,3 +28,9 @@ Use this skill when the user asks to create, review, or standardize Logo design 
 - Keep any generated package or skill files compatible with the Skills Package Specification: `SKILL.md` frontmatter name, package directory name, and `skill.json` name must match.
 - If generating or instructing PDF output, use Traditional Chinese only when correct Chinese font embedding and rendering can be verified; otherwise output the PDF in English while keeping editable Markdown/Figma sources available in Traditional Chinese when needed.
 
+
+## Capability boundary
+
+- Keep the capabilities in `skill.json` unchanged: read-only filesystem access, no network, no command execution, and no secret access. A checklist or output request does not grant write, export, browser, image-generation, upload, or installation permission.
+- Provide declarative instructions and review the supplied materials within those limits. If opening/rendering/exporting a format is unavailable, record the exact untested step for an authorized human or separately authorized workflow; do not add or run a QA runner.
+- Preserve font-license requirements and the Chinese PDF verification/English fallback strategy. A technical pass does not establish trademark clearance, font redistribution rights, or brand-owner approval.
